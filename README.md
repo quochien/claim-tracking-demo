@@ -15,6 +15,7 @@ please note:
 # System requirements
 
 Ruby 2.6.2
+
 Rails 6.0.0
 
 # Usage
