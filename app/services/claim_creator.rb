@@ -14,6 +14,6 @@ class ClaimCreator
   private
 
   def send_email_to_claimant
-    # TODO
+    ClaimMailer.with(claim: claim).claim_email.deliver_later
   end
 end
