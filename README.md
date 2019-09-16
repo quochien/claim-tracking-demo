@@ -1,24 +1,11 @@
-# README
+1. write a rails application using rails 6
+2. the project is about the claim settlement tracking system with the following items needed:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. create a claim that has fields: claim_number, claimant_name, email and accident date
+2. once claim created, email will be sent to claimant inbox using the above email attribute
+3. system can update the claim settlement tracking with statuses: in progress, evaluation, approval and rejection
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+please note:
+1. no need to care about the layout as long as can create claim and receive email
+2. no Rspec needed
+3.  require clean code based
