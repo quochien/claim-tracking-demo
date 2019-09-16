@@ -1,6 +1,6 @@
-<%= link_to("New claim", new_claim_path) %>
+<%= link_to('New claim', new_claim_path) %>
 
-<p><%= flash[:success] %></p>
+<%= render 'shared/flash_messages' %>
 
 <div>
   <label>Claim number: </label>

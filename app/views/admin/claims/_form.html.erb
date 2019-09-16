@@ -1,0 +1,30 @@
+<%= form_for [:admin, @claim] do |f| %>
+  <div>
+    <label>Claim number: </label>
+    <%= @claim.claim_number %>
+  </div>
+
+  <div>
+    <label>Claimant name: </label>
+    <%= @claim.claimant_name %>
+  </div>
+
+  <div>
+    <label>Email: </label>
+    <%= @claim.email %>
+  </div>
+
+  <div>
+    <label>Accident date: </label>
+    <%= @claim.accident_date %>
+  </div>
+
+  <div>
+    <%= f.label :status %>
+    <%= f.select(:status, Claim::statuses.keys) %>
+  </div>
+
+  <div>
+    <%= f.submit 'Submit' %>
+  </div>
+<% end %>

@@ -1,0 +1,18 @@
+<h3>Claims</h3>
+
+<%= render 'shared/flash_messages' %>
+
+<table>
+  <thead>
+    <th>ID</th>
+    <th>Claim number</th>
+    <th>Claimant name</th>
+    <th>Email</th>
+    <th>Accident date</th>
+    <th>Status</th>
+    <th></th>
+  </thead>
+  <tbody>
+    <%= render @claims %>
+  </tbody>
+</table>
