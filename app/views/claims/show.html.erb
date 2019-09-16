@@ -1,0 +1,23 @@
+<%= link_to("New claim", new_claim_path) %>
+
+<p><%= flash[:success] %></p>
+
+<div>
+  <label>Claim number: </label>
+  <%= @claim.claim_number %>
+</div>
+
+<div>
+  <label>Claimant name: </label>
+  <%= @claim.claimant_name %>
+</div>
+
+<div>
+  <label>Email: </label>
+  <%= @claim.email %>
+</div>
+
+<div>
+  <label>Accident date: </label>
+  <%= @claim.accident_date %>
+</div>

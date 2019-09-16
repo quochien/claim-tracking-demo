@@ -1,0 +1,25 @@
+<%= form_for @claim do |f| %>
+  <div>
+    <%= f.label :claim_number %>
+    <%= f.text_field :claim_number, required: true %>
+  </div>
+
+  <div>
+    <%= f.label :claimant_name %>
+    <%= f.text_field :claimant_name, required: true %>
+  </div>
+
+  <div>
+    <%= f.label :email %>
+    <%= f.email_field :email, required: true %>
+  </div>
+
+  <div>
+    <%= f.label :accident_date %>
+    <%= f.date_field :accident_date, required: true %>
+  </div>
+
+  <div>
+    <%= f.submit 'Submit' %>
+  </div>
+<% end %>
