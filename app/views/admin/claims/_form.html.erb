@@ -21,7 +21,7 @@
 
   <div>
     <%= f.label :status %>
-    <%= f.select(:status, Claim::statuses.keys) %>
+    <%= f.select(:status, Claim.status.options) %>
   </div>
 
   <div>

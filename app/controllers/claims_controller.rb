@@ -6,7 +6,7 @@ class ClaimsController < ApplicationController
   end
 
   def create
-    @claim = Claim.in_progress.new(claim_params)
+    @claim = Claim.new(claim_params)
 
     if ClaimCreator.new(@claim).create
       flash[:success] = 'Claim has been created'
